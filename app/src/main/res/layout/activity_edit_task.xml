@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.AddTaskActivity">
+
+    <TextView
+        android:id="@+id/editTaskHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Edit Task"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:id="@+id/editSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTaskHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_done" />
+
+    <EditText
+        android:id="@+id/editTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTaskHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/green_border"
+        android:hint="Enter the title"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/statusRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="3"
+        android:background="@drawable/green_border"
+        android:layout_below="@+id/editTitleEditText"> <!--  3 RadioButton -->
+
+        <!-- RadioButton cho PENDING -->
+        <RadioButton
+            android:id="@+id/pendingRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pending"
+            android:checked="true" />
+
+        <!-- RadioButton cho IN_PROGRESS -->
+        <RadioButton
+            android:id="@+id/inProgressRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="In Progress" />
+
+        <!-- RadioButton cho COMPLETED -->
+        <RadioButton
+            android:id="@+id/completedRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Completed" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/statusRadioGroup"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/green_border"
+        android:gravity="top"
+        android:hint="Enter the description"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>
