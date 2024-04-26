@@ -5,15 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".activities.AddTaskActivity">
+    tools:context=".activities.AddNoteActivity">
 
     <TextView
-        android:id="@+id/addTaskHeading"
+        android:id="@+id/addNoteHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:text="Add Task"
+        android:text="Add Note"
         android:textColor="@color/green"
         android:textSize="24sp"
         tools:ignore="RelativeOverlap" />
@@ -22,7 +22,7 @@
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/addTaskHeading"
+        android:layout_alignTop="@+id/addNoteHeading"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="16dp"
         android:src="@drawable/baseline_done" />
@@ -31,7 +31,7 @@
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addTaskHeading"
+        android:layout_below="@+id/addNoteHeading"
         android:layout_marginTop="16dp"
         android:background="@drawable/green_border"
         android:hint="Enter the title"
@@ -40,7 +40,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/descriptionEditText"
+        android:id="@+id/contentEditText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/titleEditText"

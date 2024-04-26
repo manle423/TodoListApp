@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/taskHeading"
+        android:id="@+id/noteHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -15,14 +15,13 @@
         android:layout_marginTop="16dp"
         android:text="Todo list"
         android:textColor="@color/green"
-        android:textSize="24sp"
-        tools:ignore="HardcodedText" />
+        android:textSize="24sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/taskRecyclerView"
+        android:id="@+id/noteRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/taskHeading"
+        android:layout_below="@id/noteHeading"
         android:padding="16dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -37,7 +36,6 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/green"
         android:src="@drawable/baseline_add"
-        app:tint="@color/white"
-        tools:ignore="ContentDescription" />
+        app:tint="@color/white" />
 
 </RelativeLayout>
